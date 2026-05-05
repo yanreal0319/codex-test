@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我的第一个 Codex 项目</title>
+    <title>诉讼费计算器（测试版）</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="container">
-      <h1>我的第一个 Codex 项目</h1>
-      <button id="show-time-btn" type="button">显示当前时间</button>
-      <p id="time-output" aria-live="polite"></p>
+      <h1>诉讼费计算器（测试版）</h1>
+      <p class="description">输入诉讼标的金额，点击按钮查看“仅供测试”的估算结果。</p>
+
+      <section class="calculator" aria-label="诉讼费估算">
+        <label for="claim-amount">诉讼标的金额（元）</label>
+        <input id="claim-amount" name="claim-amount" type="number" min="0" step="0.01" placeholder="例如：100000" />
+        <button id="estimate-btn" type="button">计算估算结果</button>
+        <p id="estimate-output" aria-live="polite"></p>
+      </section>
+
+      <p class="notice">提示：具体诉讼费以人民法院缴费通知为准。</p>
     </main>
 
     <script src="script.js"></script>
