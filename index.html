@@ -9,7 +9,13 @@
   <body>
     <main class="container">
       <h1>我的第一个 Codex 项目</h1>
-      <button id="show-time-btn" type="button">显示当前时间</button>
+      <p class="description">
+        点击按钮可查看当前本地时间，再次点击会刷新；如需清空结果，可使用“清除时间”按钮。
+      </p>
+      <div class="actions">
+        <button id="show-time-btn" type="button">显示当前时间</button>
+        <button id="clear-time-btn" type="button" class="secondary">清除时间</button>
+      </div>
       <p id="time-output" aria-live="polite"></p>
     </main>
 
