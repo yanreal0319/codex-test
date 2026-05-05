@@ -21,5 +21,5 @@ estimateButton.addEventListener('click', () => {
   // 仅用于前端演示的测试估算规则：按标的金额的 2.5% 计算，并设置最低 50 元。
   const estimatedFee = Math.max(claimAmount * 0.025, 50);
 
-  estimateOutput.textContent = `仅供测试：预估诉讼费约为 ${formatCurrency(estimatedFee)}。`;
+  estimateOutput.textContent = `仅供测试和学习：预估诉讼费约为 ${formatCurrency(estimatedFee)}。`;
 });
